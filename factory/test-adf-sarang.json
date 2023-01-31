@@ -1,0 +1,9 @@
+{
+	"name": "test-adf-sarang",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "daf19b57-1abb-4d5f-a97d-649b9fd15c82",
+		"tenantId": "6fdd192f-3cee-408b-a7f9-97085b884f84"
+	}
+}

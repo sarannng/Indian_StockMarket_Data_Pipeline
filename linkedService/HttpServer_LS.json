@@ -1,0 +1,14 @@
+{
+	"name": "HttpServer_LS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Linked Service for csv file download",
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://www.google.com/async/finance_wholepage_price_updates?ei=bc_YY5TxOq6Rg8UPpf6i0AI&rlz=1C1YQLS_enIN855IN855&yv=3&cs=0&async=mids:/m/04t5sp|/m/016yss|/m/02853rl|/m/04zvfw|/g/1q52gbb7v,currencies:,_fmt:jspb",
+			"enableServerCertificateValidation": false,
+			"authenticationType": "Anonymous"
+		}
+	}
+}

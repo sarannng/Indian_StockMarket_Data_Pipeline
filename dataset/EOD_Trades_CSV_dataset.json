@@ -1,0 +1,22 @@
+{
+	"name": "EOD_Trades_CSV_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": " "
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
