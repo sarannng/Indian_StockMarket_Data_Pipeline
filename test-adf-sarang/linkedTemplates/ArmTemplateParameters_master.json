@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "test-adf-sarang"
+		},
+		"AzureDataLakeStorage_LS_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage_LS_properties_typeProperties_url": {
+			"value": "https://projectsa.dfs.core.windows.net/"
+		},
+		"HttpServer_LS_properties_typeProperties_url": {
+			"value": "https://www.google.com/async/finance_wholepage_price_updates?ei=bc_YY5TxOq6Rg8UPpf6i0AI&rlz=1C1YQLS_enIN855IN855&yv=3&cs=0&async=mids:/m/04t5sp|/m/016yss|/m/02853rl|/m/04zvfw|/g/1q52gbb7v,currencies:,_fmt:jspb"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
