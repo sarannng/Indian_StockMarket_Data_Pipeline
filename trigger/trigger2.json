@@ -1,0 +1,25 @@
+{
+	"name": "trigger2",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "omegle_data_pipeline_2_min_feed",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 2,
+				"startTime": "2023-02-09T20:27:00",
+				"endTime": "2023-02-10T14:51:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
