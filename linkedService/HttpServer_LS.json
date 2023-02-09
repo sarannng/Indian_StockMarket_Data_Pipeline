@@ -5,7 +5,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": " ",
+			"url": " https://front20.omegle.com/start?caps=recaptcha2,t3&firstevents=1&spid=&randid=MPNY944D&cc=32d50740d8dd680fc86c805561c80e5885f4e8f2&lang=en",
 			"enableServerCertificateValidation": false,
 			"authenticationType": "Anonymous"
 		}
