@@ -8,11 +8,23 @@
 		"AzureDataLakeStorage_LS_accountKey": {
 			"value": ""
 		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"AzureDatabricksDeltaLake1_accessToken": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
 		"AzureDataLakeStorage_LS_properties_typeProperties_url": {
 			"value": "https://projectsa.dfs.core.windows.net/"
 		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0206-075711-a28cjilr"
+		},
 		"HttpServer_LS_properties_typeProperties_url": {
-			"value": "https://www.google.com/async/finance_wholepage_price_updates?ei=bc_YY5TxOq6Rg8UPpf6i0AI&rlz=1C1YQLS_enIN855IN855&yv=3&cs=0&async=mids:/m/04t5sp|/m/016yss|/m/02853rl|/m/04zvfw|/g/1q52gbb7v,currencies:,_fmt:jspb"
+			"value": " https://front20.omegle.com/"
 		},
 		"containerUri": {
 			"value": ""

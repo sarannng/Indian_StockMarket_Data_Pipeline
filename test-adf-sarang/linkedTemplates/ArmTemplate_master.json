@@ -11,13 +11,29 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage_LS'"
 		},
+		"AzureDatabricks1_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks1'"
+		},
+		"AzureDatabricksDeltaLake1_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricksDeltaLake1'"
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
+		},
 		"AzureDataLakeStorage_LS_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://projectsa.dfs.core.windows.net/"
 		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0206-075711-a28cjilr"
+		},
 		"HttpServer_LS_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://www.google.com/async/finance_wholepage_price_updates?ei=bc_YY5TxOq6Rg8UPpf6i0AI&rlz=1C1YQLS_enIN855IN855&yv=3&cs=0&async=mids:/m/04t5sp|/m/016yss|/m/02853rl|/m/04zvfw|/g/1q52gbb7v,currencies:,_fmt:jspb"
+			"defaultValue": " https://front20.omegle.com/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -49,8 +65,20 @@
 					"AzureDataLakeStorage_LS_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage_LS_accountKey')]"
 					},
+					"AzureDatabricks1_accessToken": {
+						"value": "[parameters('AzureDatabricks1_accessToken')]"
+					},
+					"AzureDatabricksDeltaLake1_accessToken": {
+						"value": "[parameters('AzureDatabricksDeltaLake1_accessToken')]"
+					},
+					"AzureSqlDatabase1_connectionString": {
+						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
+					},
 					"AzureDataLakeStorage_LS_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage_LS_properties_typeProperties_url')]"
+					},
+					"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks1_properties_typeProperties_existingClusterId')]"
 					},
 					"HttpServer_LS_properties_typeProperties_url": {
 						"value": "[parameters('HttpServer_LS_properties_typeProperties_url')]"
