@@ -9,6 +9,12 @@
 					"referenceName": "omegle_data_pipeline_2_min_feed",
 					"type": "PipelineReference"
 				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "api_to_adls_jsonformat",
+					"type": "PipelineReference"
+				}
 			}
 		],
 		"type": "ScheduleTrigger",
@@ -16,8 +22,8 @@
 			"recurrence": {
 				"frequency": "Minute",
 				"interval": 2,
-				"startTime": "2023-02-09T20:27:00",
-				"endTime": "2023-02-10T14:51:00",
+				"startTime": "2023-02-14T15:44:00",
+				"endTime": "2023-02-14T16:51:00",
 				"timeZone": "India Standard Time"
 			}
 		}
