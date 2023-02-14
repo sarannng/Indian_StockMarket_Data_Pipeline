@@ -20,10 +20,10 @@
 				},
 				"fileSystem": "input"
 			},
-			"columnDelimiter": ",",
-			"escapeChar": "\\",
+			"columnDelimiter": "|",
+			"escapeChar": "",
 			"firstRowAsHeader": false,
-			"quoteChar": "\""
+			"quoteChar": ""
 		},
 		"schema": []
 	},
