@@ -710,13 +710,6 @@
 							"type": "PipelineReference"
 						},
 						"parameters": {}
-					},
-					{
-						"pipelineReference": {
-							"referenceName": "api_to_adls_jsonformat",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
 					}
 				],
 				"type": "ScheduleTrigger",
@@ -731,8 +724,7 @@
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/omegle_data_pipeline_2_min_feed')]",
-				"[concat(variables('factoryId'), '/pipelines/api_to_adls_jsonformat')]"
+				"[concat(variables('factoryId'), '/pipelines/omegle_data_pipeline_2_min_feed')]"
 			]
 		}
 	]
