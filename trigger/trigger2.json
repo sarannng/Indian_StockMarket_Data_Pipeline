@@ -9,12 +9,6 @@
 					"referenceName": "omegle_data_pipeline_2_min_feed",
 					"type": "PipelineReference"
 				}
-			},
-			{
-				"pipelineReference": {
-					"referenceName": "api_to_adls_jsonformat",
-					"type": "PipelineReference"
-				}
 			}
 		],
 		"type": "ScheduleTrigger",
