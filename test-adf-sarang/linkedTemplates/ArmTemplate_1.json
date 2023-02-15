@@ -13,16 +13,16 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('factoryName'), '/trigger1')]",
+			"name": "[concat(parameters('factoryName'), '/Nifty_1min_trigger')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
-							"referenceName": "Vehical_data_pipeline",
+							"referenceName": "api_to_adls_jsonformat",
 							"type": "PipelineReference"
 						},
 						"parameters": {}
@@ -32,8 +32,9 @@
 				"typeProperties": {
 					"recurrence": {
 						"frequency": "Minute",
-						"interval": 15,
-						"startTime": "2023-01-30T13:15:00",
+						"interval": 1,
+						"startTime": "2023-02-15T10:44:00",
+						"endTime": "2023-02-15T16:51:00",
 						"timeZone": "India Standard Time"
 					}
 				}

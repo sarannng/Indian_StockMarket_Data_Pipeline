@@ -667,6 +667,27 @@
 			"dependsOn": []
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/omegle_live_count_2minfeed_trigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Minute",
+						"interval": 1,
+						"startTime": "2023-02-14T15:54:00",
+						"endTime": "2023-02-21T23:40:00",
+						"timeZone": "India Standard Time"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/trigger1')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
@@ -697,46 +718,35 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/trigger2')]",
+			"name": "[concat(parameters('factoryName'), '/Nifty_1min_trigger')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
-				"pipelines": [],
-				"type": "ScheduleTrigger",
-				"typeProperties": {
-					"recurrence": {
-						"frequency": "Minute",
-						"interval": 2,
-						"startTime": "2023-02-14T15:44:00",
-						"endTime": "2023-02-14T16:51:00",
-						"timeZone": "India Standard Time"
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "api_to_adls_jsonformat",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
 					}
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/omegle_live_count_2minfeed_trigger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Stopped",
-				"pipelines": [],
+				],
 				"type": "ScheduleTrigger",
 				"typeProperties": {
 					"recurrence": {
 						"frequency": "Minute",
 						"interval": 1,
-						"startTime": "2023-02-14T15:54:00",
-						"endTime": "2023-02-21T23:40:00",
+						"startTime": "2023-02-15T10:44:00",
+						"endTime": "2023-02-15T16:51:00",
 						"timeZone": "India Standard Time"
 					}
 				}
 			},
-			"dependsOn": []
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/api_to_adls_jsonformat')]"
+			]
 		}
 	]
 }
