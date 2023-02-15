@@ -1,15 +1,22 @@
 {
-	"name": "trigger2",
+	"name": "Nifty_1min_trigger",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
-		"pipelines": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "api_to_adls_jsonformat",
+					"type": "PipelineReference"
+				}
+			}
+		],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
 				"frequency": "Minute",
-				"interval": 2,
-				"startTime": "2023-02-14T15:44:00",
+				"interval": 1,
+				"startTime": "2023-02-15T10:44:00",
 				"endTime": "2023-02-14T16:51:00",
 				"timeZone": "India Standard Time"
 			}
