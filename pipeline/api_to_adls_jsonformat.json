@@ -80,7 +80,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/saranngpal_gmail.com#ext#@saranngpalgmail.onmicrosoft.com/2023-01-31 - DBFS Example"
+					"notebookPath": "/Users/saranngpal_gmail.com#ext#@saranngpalgmail.onmicrosoft.com/Refining-Nifty-Transformation"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks1",
