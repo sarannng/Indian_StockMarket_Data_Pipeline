@@ -1,16 +1,23 @@
 {
-	"name": "omegle_live_count_2minfeed_trigger",
+	"name": "omegle_live_count_1minfeed_trigger",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
-		"pipelines": [],
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "omegle_data_pipeline_2_min_feed",
+					"type": "PipelineReference"
+				}
+			}
+		],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
 				"frequency": "Minute",
 				"interval": 1,
-				"startTime": "2023-02-14T15:54:00",
-				"endTime": "2023-02-21T23:40:00",
+				"startTime": "2023-02-21T10:05:00",
+				"endTime": "2023-02-28T23:40:00",
 				"timeZone": "India Standard Time"
 			}
 		}
