@@ -267,7 +267,7 @@
 						},
 						"userProperties": [],
 						"typeProperties": {
-							"notebookPath": "/Users/saranngpal_gmail.com#ext#@saranngpalgmail.onmicrosoft.com/2023-01-31 - DBFS Example"
+							"notebookPath": "/Users/saranngpal_gmail.com#ext#@saranngpalgmail.onmicrosoft.com/Refining-Nifty-Transformation"
 						},
 						"linkedServiceName": {
 							"referenceName": "AzureDatabricks1",
@@ -667,6 +667,37 @@
 			"dependsOn": []
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/Nifty_1min_trigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "api_to_adls_jsonformat",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Minute",
+						"interval": 1,
+						"startTime": "2023-02-21T10:44:00",
+						"endTime": "2023-02-21T16:33:01",
+						"timeZone": "India Standard Time"
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/api_to_adls_jsonformat')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/omegle_live_count_2minfeed_trigger')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
@@ -715,37 +746,6 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/pipelines/Vehical_data_pipeline')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/Nifty_1min_trigger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Started",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "api_to_adls_jsonformat",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
-				"type": "ScheduleTrigger",
-				"typeProperties": {
-					"recurrence": {
-						"frequency": "Minute",
-						"interval": 1,
-						"startTime": "2023-02-15T10:44:00",
-						"endTime": "2023-02-15T16:51:00",
-						"timeZone": "India Standard Time"
-					}
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/api_to_adls_jsonformat')]"
 			]
 		}
 	]
