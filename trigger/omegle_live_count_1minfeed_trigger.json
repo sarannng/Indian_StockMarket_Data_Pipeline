@@ -2,7 +2,7 @@
 	"name": "omegle_live_count_1minfeed_trigger",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
